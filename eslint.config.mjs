@@ -4,12 +4,10 @@ import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
-
-
 export default [
-  {ignores: ["dist/"]},
-  {files: ["src/**/*.{js,ts,jsx,tsx}"]},
-  {languageOptions: { globals: globals.browser }},
+  { ignores: ["dist/"] },
+  { files: ["src/**/*.{js,ts,jsx,tsx}"] },
+  { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
