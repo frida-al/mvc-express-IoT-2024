@@ -2,7 +2,7 @@ import pool from "../db";
 import { ResultSetHeader, RowDataPacket } from "mysql2/promise";
 import { PaginatedTeacher, Teacher } from "../interfaces/teacher";
 
-// Obtener todos los alumnos
+// Obtener todos los profesores
 export const findAllTeachers = async (
   limit: number,
   offset: number,

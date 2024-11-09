@@ -1,4 +1,3 @@
-// Tipo para representar un Alumno
 export interface Teacher {
   id?: number;
   first_name: string;

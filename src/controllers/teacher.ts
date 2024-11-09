@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 import { deleteById, findAll, insert, update } from "../services/teacher";
 import { Teacher } from "../interfaces/teacher";
 
-// Obtener todos los alumnos
+// Obtener todos los profesores
 export const getTeachers = async (req: Request, res: Response) => {
   try {
     const page = parseInt(req.query.page as string) || 1;
